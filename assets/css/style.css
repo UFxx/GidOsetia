@@ -88,6 +88,7 @@ header {
 
 .header-title {
     background: linear-gradient(180deg, #353535 0%, #D7D7D7 60%, #FFFFFF);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 72px;
@@ -97,6 +98,7 @@ header {
     text-align: center;
     font-size: 48px;
     background: linear-gradient(180deg, #353535 0%, #D7D7D7 60%, #FFFFFF);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

@@ -1,5 +1,6 @@
 main {
     margin-top: 100px;
+    overflow-x: hidden;
 }
 
 .tours-title {
@@ -8,35 +9,32 @@ main {
 }
 
 .tours-slider {
-    position: absolute;
+    position: relative;
     margin-top: 50px;
+    margin-left: 110px;
     width: 1330px;
-    left: 100px;
+    height: 700px;
     display: flex;
     justify-content: center;
-    overflow: hidden;
 }
 
 .tours-slider-line {
+    position: absolute;
+    left: 500px;
     display: flex;
     column-gap: 30px;
-
-    transition: .3s ease margin-left;
+    transition: .3s ease left;
 }
 
 .slider-line-item {
     display: flex;
     flex-direction: column;
-    text-align: center;
     overflow: hidden;
-    height: 250px;
+    height: 315px;
     border-radius: 25px;
+    transform: scale(0.7);
 
-    transition: .3s ease height;
-}
-
-.tours-slider-line .slider-line-item:first-child {
-    margin-left: 950px;
+    transition: .3s ease height, .3s ease transform;
 }
 
 .slider-line-item img {
@@ -44,38 +42,45 @@ main {
     height: 250px;
 }
 
-.slider-line-item:hover {
-    height: 530px;
+.slider-line-item__active {
+    height: 500px;
+    transform: scale(1.1);
 }
 
 .slider-item-rating {
-    text-align: center
+    margin-left: -30px;
 }
 
-.slider-item-rating i {
-    color: yellow;
-}
-
-.slider-line-item img{
+.slider-line-item img {
     border-radius: 25px;
-    width: 350px;
-    height: 250px;
+    width: 380px;
+    height: 275px;
 }
 
 .slider-item-info {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 50px;
-    width: 240px;
+    width: 300px;
 }
 
 .slider-item-title {
     font-size: 24px;
+    white-space: nowrap;
+    margin-left: -30px;
+    height: 0px;
+    overflow: hidden;
+
+    transition: .3s ease height;
+}
+
+.slider-item-title__active {
+    height: 30px;
 }
 
 .slider-item-description {
-    width: 250px;
-    font-size: 16px;
-    margin-top: 20px;
+    margin-left: -30px;
+    font-size: 18px;
+    margin-top: 10px;
     text-align: justify;
 }
 
@@ -85,6 +90,7 @@ main {
     left: 40px;
     top: 40%;
     cursor: pointer;
+    z-index: 2;
 }
 
 .slider-arrow-right {
@@ -93,9 +99,41 @@ main {
     right: 40px;
     top: 40%;
     cursor: pointer;
+    z-index: 2;
 }
 
-footer  {
+.slider-left-button {
+    position: absolute;
+    width: 300px;
+    height: 246px;
+    top: 208px;
+    border: 2px solid black;
+    z-index: 2;
+}
+
+.slider-right-button {
+    position: absolute;
+    width: 300px;
+    height: 246px;
+    top: 208px;
+    right: 0;
+    border: 2px solid black;
+    z-index: 3;
+}
+
+.change-slider-method {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 20px;
+    user-select: none;
+}
+
+.change-slider-method input + label {
+    font-family: "Inter", sans-serif;
+}
+
+footer {
     position: absolute;
     bottom: 0;
     width: 76.55%;
