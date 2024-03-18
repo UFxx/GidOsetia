@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Kelly Slab", sans-serif;
+    color: #CDCCCC;
+}
+
+body {
+    background-color: #7B7B7B;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-menu {
+    display: flex;
+    column-gap: 50px;
+}
+
+.header-menu a {
+    background-color: #213E39;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 0 0 25px 25px;
+
+    transition: .3s ease transform;
+}
+
+.header-menu a:first-child {
+    border-radius: 0 0 25px 0;
+    width: 150px;
+    text-align: left;
+}
+
+.header-menu a:hover {
+    transform: translateY(-4px);
+}
