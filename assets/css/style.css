@@ -7,6 +7,7 @@ header {
     content: '';
     position: absolute;
     background-image: url(/assets/img/index-imgs/header-img.png);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -36,7 +37,7 @@ header {
     list-style: none;
     border-radius: 25px 25px 0 0;
 
-    transition: .3s ease transform;
+    transition: .3s ease transform, .3s ease background-color;
 }
 
 .header-menu ul li:first-child {
@@ -76,7 +77,13 @@ header {
 
 .header-menu-buttons a {
     font-family: 'Inter', sans-serif;
+    color: rgba(255, 255, 255, 0.5);
 
+    transition: .3s ease color;
+}
+
+.header-menu-buttons a:hover {
+    color: white;
 }
 
 .header-info {
@@ -106,6 +113,9 @@ header {
 main {
     padding: 0 60px;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-content {
@@ -137,7 +147,7 @@ main {
 
 .main-img-descr {
     position: absolute;
-    top: 73%;
+    top: 70%;
     left: 10%;
     z-index: 2;
 }
@@ -147,7 +157,7 @@ main {
 }
 
 .main-img-text {
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'inter', sans-serif;
     margin-top: 20px;
 }
@@ -186,7 +196,7 @@ main {
 
 .main-content-attraction-item img {
     width: 220px;
-    border-radius: 25px;
+    height: 100%;
 }
 
 .attraction-item-title {
@@ -194,7 +204,19 @@ main {
 }
 
 .attraction-item-text {
-    font-size: 20px;
+    font-size: 16px;
+    width: 90%;
     margin-top: 20px;
     font-family: 'Inter', sans-serif;
+}
+
+.main-img {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: .6s ease opacity, .6s ease transform;
+}
+
+.main-content-attraction-item {
+    opacity: 0;
+    transform: translateY(50px);
 }

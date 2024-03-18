@@ -3,12 +3,12 @@ main {
     overflow-x: hidden;
 }
 
-.tours-title {
+.events-title {
     text-align: center;
     font-size: 48px;
 }
 
-.tours-slider {
+.events-slider {
     position: relative;
     margin-top: 50px;
     margin-left: 110px;
@@ -18,9 +18,9 @@ main {
     justify-content: center;
 }
 
-.tours-slider-line {
+.events-slider-line {
     position: absolute;
-    left: 0;
+    left: 0px;
     display: flex;
     column-gap: 30px;
     transition: .3s ease left;
@@ -34,13 +34,13 @@ main {
     border-radius: 25px;
     transform: scale(0.7);
     z-index: -1;
-    
+
     transition: .3s ease height, .3s ease transform;
 }
 
 .slider-line-item img {
-    width: 350px;
-    height: 250px;
+    width: 418px;
+    height: 302px;
 }
 
 .slider-line-item__active {
@@ -68,14 +68,10 @@ main {
     font-size: 24px;
     white-space: nowrap;
     margin-left: -30px;
-    height: 0px;
+    height: 30px;
     overflow: hidden;
 
     transition: .3s ease height;
-}
-
-.slider-item-title__active {
-    height: 30px;
 }
 
 .slider-item-description {

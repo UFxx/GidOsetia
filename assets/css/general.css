@@ -13,6 +13,7 @@ body {
 .header-menu {
     position: fixed;
     top: 0;
+    z-index: 10;
 }
 
 .header-menu ul {
@@ -24,7 +25,7 @@ body {
     padding: 15px 20px 30px 20px;
     background-color: #213E39;
     list-style: none;
-    border-radius: 0 0 25px 25px ;
+    border-radius: 0 0 25px 25px;
 
     transition: .3s ease transform;
 }
