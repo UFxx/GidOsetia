@@ -1,0 +1,109 @@
+body {
+    height: 100svh;
+    background-color: #A1A1A1;
+    overflow: hidden;
+}
+
+.mountain-container {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mountain-container::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/img/registration/mountain.png);
+    background-size: contain;
+    z-index: -1;
+}
+
+.mountain-container::after {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/img/registration/ornament.png);
+    background-size: contain;
+    z-index: -2;
+}
+
+form {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.form-title {
+    font-size: 38px;
+    color: #213E39;
+    font-family: "Kelly Slab", sans-serif;
+    text-align: center;
+}
+
+form input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 3px solid #CFCFCF;
+    font-size: 32px;
+    font-family: "Kelly Slab", sans-serif;
+    color: #CFCFCF;
+
+    transition: .3s ease background-color;
+}
+
+form input::placeholder {
+    color: #CFCFCF;
+
+    transition: .3s ease transform;
+}
+
+form input:focus::placeholder {
+    transform: translateY(-200%);
+}
+
+form input:hover {
+    background-color: rgba(0, 0, 0, 0.141);
+}
+
+form input:focus {
+    background-color: rgba(0, 0, 0, 0.141);
+}
+
+.form-buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    margin-top: 30px;
+}
+
+.fas {
+    font-size: 36px;
+    color: white;
+    padding: 15px;
+    background-color: transparent;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.fas:hover {
+    background-color: #213e3985;
+}
+
+.form-buttons a:first-child {
+    color: #213E39;
+    padding: 20px;
+    border-radius: 30px;
+    font-family: "Kelly Slab", sans-serif;
+    font-size: 22px;
+}
