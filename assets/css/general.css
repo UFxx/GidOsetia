@@ -13,37 +13,6 @@ a {
     text-decoration: none;
 }
 
-.header-menu {
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    column-gap: 50px;
-}
-
-.header-menu a {
-    background-color: #213E39;
-    padding: 15px 20px;
-    font-size: 20px;
-    border-radius: 0 0 25px 25px;
-    color: #CDCCCC;
-    text-decoration: underline;
-    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
-
-    transition: .3s ease transform, .3s ease background-color;
-}
-
-.header-menu a:first-child {
-    border-radius: 0 0 25px 0;
-    width: 150px;
-    text-align: left;
-}
-
-.header-menu a:hover {
-    transform: translateY(-6px);
-    background-color: #1b332f;
-}
-
 footer {
     display: flex;
     justify-content: space-between;
