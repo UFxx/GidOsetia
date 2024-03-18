@@ -1,15 +1,14 @@
-.landmark-content {
-    position: absolute;
-    display: flex;
-    flex-direction: column;;
-    align-items: center;
-    width: calc(100svw - 77px);
-    height: calc(300svh - 60px);
-    top: 0;
-    left: 0;
-    padding: 30px;
-    z-index: 6;
-    background-color: #F7E0C8;
+body {
+    margin: 0;
+    background-color: #7B7B7B;
+}
+
+main {
+    margin-top: 0px !important;
+}
+
+.header-menu ul li:first-child {
+    margin-left: -30px;
 }
 
 .landmark-img-container {
@@ -24,7 +23,7 @@
 .landmark-img-container img {
     position: absolute;
     width: 100%;
-    top: -300px;
+    padding: 30px;
 }
 
 .add-favorite-button {
@@ -32,8 +31,9 @@
     font-size: 22px;
     z-index: 1;
     width: 330px;
+    height: 70px;
     border-radius: 25px;
-    padding: 20px;
+    padding: 5px 20px 0 5px;
     background-color: #BE9973;
     top: 486px;
     left: 89px;
@@ -41,9 +41,10 @@
 }
 
 .add-favorite-button p {
-    margin-left: 70px;
+    margin-left: 90px;
     text-wrap: nowrap;
     color: #674042;
+    font-family: "Kelly Slab", sans-serif;
 }
 
 .add-favorite-button::before {
@@ -61,6 +62,7 @@
 .landmark-info {
     padding: 0 200px;
     margin-top: 100px;
+    color: white;
 }
 
 .landmark-title {
@@ -107,6 +109,8 @@
 
 .recomendations-title {
     font-size: 48px;
+    font-family: "Kelly Slab", sans-serif;
+    color: #8D0B0E;
 }
 
 .recomendations-content {
@@ -116,7 +120,6 @@
     gap: 100px;
     margin-top: 50px;
 }
-
 
 .recomendations-item {
     width: 400px;
@@ -128,32 +131,32 @@
 
 .recomendations-item img {
     width: 400px;
+    height: 260px;
 }
 
-.recomendations-item p, button {
+.recomendations-item p, .recomendations-item-info a {
     font-size: 22px;
     margin: 0;
+    color: #674042;
 }
 
 .recomendations-item-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 25px;
+    row-gap: 10px;
     padding: 20px 0;
     box-sizing: border-box;
 }
 
-.recomendations-item-info button {
+.recomendations-item-info a {
     position: relative;
-    border: none;
-    outline: none;
-    background-color: transparent;
     cursor: pointer;
 }
 
 .recomendations-item-adress {
     position: relative;
+    text-align: center;
 }
 
 .recomendations-item-adress::before {
@@ -178,4 +181,50 @@
     height: 30px;
     left: -40px;
     top: -5px;
+}
+
+.feedback {
+    margin-top: 100px;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.feedback-title {
+    text-align: center;
+    font-size: 48px;
+    color: #8D0B0E;
+}
+
+.feedback-item {
+    padding: 25px 30px;
+    width: 600px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.feedback-photo img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.feedback-info {
+    font-family: "Kelly Slab", sans-serif;
+}
+
+.feedback-name {
+    font-size: 28px;
+    color: black;
+}
+
+.feedback-text {
+    color: black;
+    font-size: 24px;
+    width: 400px;
 }
