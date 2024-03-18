@@ -19,6 +19,12 @@ header {
     top: 94%;
 }
 
+.header__fixed {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
 .header-menu ul {
     display: flex;
     column-gap: 50px;

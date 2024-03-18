@@ -9,6 +9,43 @@ body {
     background-color: #7B7B7B;
 }
 
+
+.header-menu {
+    position: fixed;
+    top: 0;
+}
+
+.header-menu ul {
+    display: flex;
+    column-gap: 50px;
+}
+
+.header-menu ul li {
+    padding: 15px 20px 30px 20px;
+    background-color: #213E39;
+    list-style: none;
+    border-radius: 0 0 25px 25px ;
+
+    transition: .3s ease transform;
+}
+
+.header-menu ul li:first-child {
+    border-radius: 0 0 25px 0;
+    width: 130px;
+}
+
+.header-menu ul li:first-child a {
+    margin-left: 60px;
+}
+
+.header-menu ul li:hover {
+    transform: translateY(-10px);
+}
+
+.header-menu ul li a{
+    font-size: 22px;
+}
+
 a {
     text-decoration: none;
 }
