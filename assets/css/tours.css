@@ -1,0 +1,102 @@
+main {
+    margin-top: 100px;
+}
+
+.tours-title {
+    text-align: center;
+    font-size: 48px;
+}
+
+.tours-slider {
+    position: absolute;
+    margin-top: 50px;
+    width: 1330px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tours-slider-line {
+    display: flex;
+    column-gap: 30px;
+
+    transition: .3s ease margin-left;
+}
+
+.slider-line-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 25px;
+
+    transition: .3s ease height;
+}
+
+.tours-slider-line .slider-line-item:first-child {
+    margin-left: 950px;
+}
+
+.slider-line-item img {
+    width: 350px;
+    height: 250px;
+}
+
+.slider-line-item:hover {
+    height: 530px;
+}
+
+.slider-item-rating {
+    text-align: center
+}
+
+.slider-item-rating i {
+    color: yellow;
+}
+
+.slider-line-item img{
+    border-radius: 25px;
+    width: 350px;
+    height: 250px;
+}
+
+.slider-item-info {
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 240px;
+}
+
+.slider-item-title {
+    font-size: 24px;
+}
+
+.slider-item-description {
+    width: 250px;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.slider-arrow-left {
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 40px;
+    top: 40%;
+    cursor: pointer;
+}
+
+.slider-arrow-right {
+    position: absolute;
+    transform: rotate(90deg);
+    right: 40px;
+    top: 40%;
+    cursor: pointer;
+}
+
+footer  {
+    position: absolute;
+    bottom: 0;
+    width: 76.55%;
+}
