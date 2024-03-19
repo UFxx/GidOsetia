@@ -165,10 +165,3 @@ main {
 .donwload button:hover {
     background-color: #a50404;
 }
-
-footer {
-    position: absolute;
-    top: 750px;
-    bottom: 0;
-    width: 76.3%;
-}
