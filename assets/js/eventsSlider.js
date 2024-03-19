@@ -19,10 +19,6 @@ sliderLeftArrow.addEventListener('click', () => {
         el.classList.remove('slider-line-item__active');
     })
 
-    sliderItemTitle.forEach(el => {
-        el.classList.remove('slider-item-title__active')
-    })
-
     i -= 1;
     sliderLineItems[i].classList.add('slider-line-item__active');
 })
