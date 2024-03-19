@@ -100,9 +100,10 @@ main {
 
 .background-img-routes {
     position: absolute;
-    top: 820px;
-    width: 1489px;
-    height: 1574px;
+    top: 1000px;
+    right: 0;
+    width: 1200px;
+    height: 1000px;
     z-index: -1;
 }
 
