@@ -2,7 +2,7 @@ const mainImg = document.querySelector('.main-img');
 const attractionItems = document.querySelectorAll(`.main-content-attraction-item`);
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY >= 400) {
+    if (window.scrollY >= 200) {
         mainImg.style.transform = 'translateY(0)';
         mainImg.style.opacity = 100;
         attractionItems.forEach(el => {

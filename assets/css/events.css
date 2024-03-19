@@ -149,7 +149,7 @@ main {
     text-align: center;
 }
 
-.donwload button {
+.donwload a {
     margin-top: 10px;
     background-color: #910505;
     outline: none;

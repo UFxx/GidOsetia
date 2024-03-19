@@ -134,6 +134,19 @@ main {
     font-family: "Inter", sans-serif;
 }
 
+.slider-line-right, .slider-line-left {
+    position: absolute;
+    top: 34%;
+    width: 350px;
+    height: 190px;
+    z-index: 2;
+    display: none;
+}
+
+.slider-line-right {
+    right: 0px;
+}
+
 .donwload {
     position: absolute;
     display: flex;
@@ -153,7 +166,7 @@ main {
     text-align: center;
 }
 
-.donwload button {
+.donwload a {
     margin-top: 10px;
     background-color: #910505;
     outline: none;
