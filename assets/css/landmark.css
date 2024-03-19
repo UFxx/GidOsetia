@@ -15,7 +15,8 @@ main {
     position: relative;
     height: 640px;
     z-index: 0;
-    margin: 30px;
+    margin: 100px 30px 30px 30px;
+    border-radius: 30px;
     overflow: hidden;
 }
 
